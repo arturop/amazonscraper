@@ -38,6 +38,7 @@ try: # Try and get ASINs from your Amazon Wish List
     html = scraperwiki.scrape(url)
     root = lxml.html.fromstring(html)
     for element in root.cssselect("tbody[class='a-normal g-print-items']"):
+        print "element: " + element
         string = element.attrib["name"]
         pieces = string.split(".")
         asins.append(pieces[3])
