@@ -5,7 +5,7 @@ import datetime
 
 # Variables
 
-wishlist = "9ARUET7JDUAO"
+wishlist = "NY3TC692M6H1"
 limit = 10
 asins = []
 
