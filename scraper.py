@@ -34,6 +34,7 @@ def save(title, link, description):
 
 try: # Try and get ASINs from your Amazon Wish List
     url = "http://www.amazon.com/wishlist/" + wishlist + "/ref=cm_wl_act_print_o?_encoding=UTF8&disableNav=1&items-per-page=2500&layout=standard-print&page=1&visitor-view=1"
+    print url
     html = scraperwiki.scrape(url)
     root = lxml.html.fromstring(html)
     for element in root.cssselect("tbody[class='itemWrapper']"):
